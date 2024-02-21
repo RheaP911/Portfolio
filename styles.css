@@ -44,6 +44,7 @@ div {
     align-items: center;
     justify-content: center;
     background-color: #0B0144;
+    z-index: 100;
 }
 
 .nav1 {
@@ -287,11 +288,12 @@ div {
 
 .services {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 70vh;
     padding: 0 100px;
     padding-top: 40px;
-    justify-content: space-between;
+    gap: 50px;
 }
 
 .service {
@@ -492,49 +494,79 @@ div {
     height: 90vh;
 }
 
-.proj-title {
+.project-title {
     height: 20vh;
-    width: 100%;
-    padding: 50px 110px;
-    text-align: center;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
 }
 
-.projects {
+.project-title h3 {
+    text-align: center;
+    color: #ededed;
+    font-size: 50px;
+}
+
+.project-title h3 span{
+    color: #ff3e7e;
+}
+
+.projects-slide {
     display: flex;
     width: 100%;
-    height: 60vh;
+    height: 45vh;
+    
+}
+
+.my-slides {
+    display: flex;
+    width: 100%;
+    height: 45vh;
 }
 
 .proj-photo {
+    display: flex;
+    justify-content: center;
     width: 50%;
     padding-left: 110px;
-    padding-top: 50px;
-    padding-right: 20px;
+    height: 45vh;
 }
+
 
 .proj-desc {
-    width: 50%;
+    width: 50%; 
 }
 
-/*
-.desc-title {
-    height: 20vh;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    padding-right: 100px;
+.proj-text {
+    width: 100%;
+    height: 45vh;
+    padding-right: 200px;
+    padding-left: 10px;
+    padding-top: 2rem;
 }
 
-.desc-p {
-    height: 30vh;
-    padding-right: 100px;
+.proj-desc h2 {
+    color: #ff3e7e;
+    font-size: 40px;
+    line-height: 2em;
 }
-*/
+
+
+.proj-desc h2 span {
+    color: #D3D9F0;
+}
+
+.proj-desc p {
+    font-size: 20px;
+}
+
 
 .circles {
     display: flex;
-    height: 20vh;
+    height: 25vh;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 50px;
     width: 10%;
 }
 
@@ -552,12 +584,14 @@ div {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    color: #C4C5DE;
 }
 
 .in-circle {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    background-color: #ff3e7e;
 }
 
 .content6 {
@@ -601,7 +635,7 @@ div {
 
 .contact-text h4 {
     font-size: 25px;
-    color: #C4C5DE;
+    color: #D3D9F0;
     line-height: 1em;
 }
 
@@ -618,12 +652,17 @@ div {
     list-style-type:none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    color: #D3D9F0;
+}
+
+.contact-list li:hover {
+    color: #ededed;
 }
 
 .contact-list i {
     color: #ff3e7e;
     line-height: 2em;
-    cursor: 
 }
 
 .contact-icons {
@@ -652,37 +691,44 @@ div {
     box-shadow: 0 0 20px #ff3e7e;
 }
 
-.contact2 {
-    display: flex;
-    flex-direction: column;
+/*
+    .last-text p {
+        padding: 10px 0;
+        font-weight: 200;
+        margin-top: 70px;
+    }
+}*/
+
+.contact-form {
     width: 50%;
-    height: 50vh;
+    order: 2;
+    padding-top: 5rem;
+    padding-left: 2rem;
 }
 
-.form {
-    height: 35vh;
-    padding-top: 3rem;
-    padding-right: 6rem;
-    padding-left: 1rem;
-}
-
-.name,
-.email,
-.subject {
-   height: 40px; 
-   margin-bottom: 10px;
-   padding: 10px;
-}
-
-.message {
-    height: 100px;
+.contact-form form input,form textarea {
+    width: 80%;
     padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem;
+    border: 0;
+    background-color: #D3D9F0;
 }
 
-.submit {
-    width: 81%;
-    padding:10px;
-    margin-left: 1rem;
-    text-align: center;
-    border-radius: 25px;
+
+.contact-form form .send {
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 15px;
+    background-color: #ff3e7e;
+    box-shadow: 0 0 5px #ff3e7e,
+    0 0 25px #ff3e7e
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px #ff3e7e,
+    0 0 25px #ff3e7e, 0 0 50px #ff3e7e
 }
