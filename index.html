@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -12,18 +13,15 @@
         <header class="navbar">
             <div class="nav">
                 <div class="nav1">
-                    <div class="logo">Logo</div>
-                    <div class="logo-name">Portfolio</div>
+                    <img src="resources/portfolio-logo.png" alt="Portfolio">
                 </div>
                 <div class="nav2">
-                    <!-- not yet edited css (div text) -->
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                     <a href="about">About</a>
                     <a href="services">Services</a>
                     <a href="skills">Skills</a>
                     <a href="projects">Project</a>
                     <a href="contact">Contact Me</a>
-                    <a href="contact">Contact US</a>
                 </div>
             </div>
         </header>
@@ -39,21 +37,22 @@
                 </div>
                 <div class="home2">
                     <div class="blank"></div>
-                    <!-- not yet edited in css -->
-                    <!-- text1,2,3 -->
                     <div class="line">
                         <h3>Hello, it's me</h3>
                         <h1>Rhealyn Panganiban</h1>
-                        <h3>I am an <span>Aspiring Full-Stack Developer</span></h3>
+                        <h2>I am an <span>Aspiring Full-Stack Developer</span></h2>
+                        <p>seeking an opportunity in software development to apply my
+                            programming skills, problem-solving abilties, and passion
+                            for innovation.</p>
                     </div> 
                     <div class="socials">
-                        <!-- a href = link -->
-                        <div class="social">fb</div> <!-- facebook -->
-                        <div class="social">in</div> <!-- instagram -->
-                        <div class="social">li</div> <!-- linkedin -->
+                        <a href="https://www.facebook.com/rhealyn.panganiban.90/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/izme_rhea/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/rhealyn-panganiban-90b446171/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     </div>     
-                    <!-- <div class="button">Button</div> -->
-                    <a href="#about" class="button">More About Me</a>
+                    <div class="button">
+                        <a href="#about" class="more-btn">Learn More</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,13 +60,20 @@
         <section>
             <div class="content2" id="about">
                 <div class="about-me1">
-                    <div class="photo">My Photo</div>
+                    <img src="resources/my-photo.png" alt="My Photo">
                 </div>
                 <div class="about-me2">
-                    <!-- Added line 3 (intro1, 2)-->
                     <h2>About <span>Me</span></h2>
                     <h4>Aspiring Full-Stack Developer</h4>
-                    <p>I'am an aspiring ....</p>
+                    <p>I'm an aspiring full-stack developer with a passion for 
+                        crafting seamless and engaging digital experiences. In 
+                        the realm of web development, I believe that a well-designed
+                        website is not merely a collection of code but a harmonious
+                         blend of creativity, and functionality. I am dedicated to 
+                         creating dynamic and responsive websites/applications that not 
+                         only meet technical standards but also captivate users with 
+                         an aesthetically pleasing design.</p>
+
                 </div>
             </div>
             
@@ -76,27 +82,26 @@
         <section>
             <div class="content3" id="services">
                 <div class="title-services">
-                    <!-- line1 -->
-                    <h1>My <span>Services</span></h1>
+                    <h1 class="services-title">My <span>Services</span></h1>
                 </div>
                 <div class="services">
-                    <div class="service1">
-                        <div class="service-icon">Icon</div> <!-- use boxicons -->
-                        <h2>Service Type</h2> <!-- <div class="service-type">Type</div> -->
-                        <p>Lorem ipsum etc...</p> <!-- <div class="service-desc">Description</div> -->
-                        <div class="service-btn">Button</div>
+                    <div class="service">
+                        <i class='bx bx-code-alt' style='color:#ff3e7e'  ></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Creating websites and apps that look great and are easy to use. I focus on making sure everything feels right for users – from how it looks to how it works.</p>
+                            <a href="#portfolio" class="read">Learn more</a>
                     </div>
-                    <div class="service2">
-                        <div class="service-icon">Icon</div>
-                        <h2>Service Type</h2> <!-- <div class="service-type">Type</div> -->
-                        <p>Lorem ipsum etc...</p>
-                        <div class="service-btn">Button</div>
+                    <div class="service">
+                        <i class='bx bx-laptop' style='color:#ff3e7e' ></i>
+                            <h2>Website Design</h2>
+                            <p>Making websites and apps that not only look good but also work smoothly. I focus on creating layouts, buttons, and visuals that are easy on the eyes.</p>
+                            <a href="#portfolio" class="read">Learn more</a>
                     </div>
-                    <div class="service3">
-                        <div class="service-icon">Icon</div>
-                        <h2>Service Type</h2> <!-- <div class="service-type">Type</div> -->
-                        <p>Lorem ipsum etc...</p>
-                        <div class="service-btn">Button</div>
+                    <div class="service">
+                        <i class='bx bx-mobile-alt' style='color:#ff3e7e' ></i>
+                        <h2>App Design</h2>
+                        <p>Building the hidden magic behind websites and apps. I focus on creating the servers, databases, and logic that make everything run smoothly.</p>
+                        <a href="#portfolio" class="read">Learn more</a>
                     </div> 
                 </div> 
             </div>
@@ -104,77 +109,76 @@
         
         <section>
             <div class="content4" id="skills">
-                <div class="skills">
-                    <div class="title-skills">My Skills</div>
-                    <div class="skills-percent">
-                        <div class="card">
-                            <div class="percent">
-                                <div class="dot"></div>
-                                <!-- use svg -->
-                                <div class="circle">
-                                    <div class="circle1"></div>
-                                    <div class="html-circle"></div>
-                                </div>
-                                <div class="number">
-                                    <h1>30%</h1><!-- <div class="num">30%</div> -->
-                                    <p>HTML</p><!-- <div class="type">HTML</div> -->
-                                </div>
-                            </div>
+                <div class="skills-title">
+                    <h1 class="title-skills">My <span>Skills</span>
+                </div>
+                
+                <div class="skills-percent">
+                    <div class="card">
+                        <div class="percent" style="--clr:#FF3E7E";--num:30>
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>30<span>%</span></h2>
+                                <p>HTML</p>
+                            </div> 
                         </div>
-                        <div class="card">
-                            <div class="percent">
-                                <div class="dot"></div>
-                                <div class="circle">
-                                    <div class="circle1"></div>
-                                    <div class="css-circle"></div>
-                                </div>
-                                <div class="number">
-                                    <h1>20%</h1><!-- <div class="num">30%</div> -->
-                                    <p>CSS</p>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent">
+                            <div class="dot"></div>
+                            <div class="circle">
+                                <div class="circle1"></div>
+                                <div class="css-circle"></div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="percent">
-                                <div class="dot"></div>
-                                <div class="circle">
-                                    <div class="circle1"></div>
-                                    <div class="js-circle"></div>
-                                </div>
-                                <div class="number">
-                                    <h1>5%</h1><!-- <div class="num">30%</div> -->
-                                    <p>Javascript</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="percent">
-                                <div class="dot"></div>
-                                <div class="circle">
-                                    <div class="circle1"></div>
-                                    <div class="py-circle"></div>
-                                </div>
-                                <div class="number">
-                                    <h1>45%</h1><!-- <div class="num">30%</div> -->
-                                    <p>Python</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="percent">
-                                <div class="dot"></div>
-                                <div class="circle">
-                                    <div class="circle1"></div>
-                                    <div class="cpp-circle"></div>
-                                </div>
-                                <div class="number">
-                                    <h1>20%</h1><!-- <div class="num">30%</div> -->
-                                    <p>C++</p>
-                                </div>
+                            <div class="number">
+                                <h1>20%</h1><!-- <div class="num">30%</div> -->
+                                <p>CSS</p>
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="card">
+                        <div class="percent">
+                            <div class="dot"></div>
+                            <div class="circle">
+                                <div class="circle1"></div>
+                                <div class="js-circle"></div>
+                            </div>
+                            <div class="number">
+                                <h1>5%</h1><!-- <div class="num">30%</div> -->
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent">
+                            <div class="dot"></div>
+                            <div class="circle">
+                                <div class="circle1"></div>
+                                <div class="py-circle"></div>
+                            </div>
+                            <div class="number">
+                                <h1>45%</h1><!-- <div class="num">30%</div> -->
+                                <p>Python</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="percent">
+                            <div class="dot"></div>
+                            <div class="circle">
+                                <div class="circle1"></div>
+                                <div class="cpp-circle"></div>
+                            </div>
+                            <div class="number">
+                                <h1>20%</h1><!-- <div class="num">30%</div> -->
+                                <p>C++</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -214,7 +218,40 @@
         
         <section>
             <div class="content6" id="contact">
-                <div class="contact">
+                <div class="contact-text">
+                    <div class="text-contact">
+                        <h2>Contact<span> Me</span></h2>
+                        <h4>Let's Work Together</h4>
+                        <p>Let's turn ideas into reality. Whether it's crafting 
+                            compelling websites, solving complex problems, or creating 
+                            innovative solutions—let's collaborate and make a lasting 
+                            impact.</p>
+                    </div>
+                    
+                    <div class="contact-list">
+                        <li><i class='bx bxs-send'></i> rhealypanganiban20@gmail.com</li>
+                        <li><i class='bx bxs-phone'></i> 09268518727</li>
+                    </div>
+                    <div class="contact-icons">
+                        <a href="https://www.facebook.com/rhealyn.panganiban.90/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/izme_rhea/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>                    
+                        <a href="https://www.linkedin.com/in/rhealyn-panganiban-90b446171/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                </div>
+        
+                <div class="contact-form">
+                    <form action="send_email.php" method="post">
+                       <input type="" placeholder="Name" required> 
+                       <input type="email" placeholder="Enter your email" required>
+        
+                       <input type="" placeholder="Enter your subject">
+                       <textarea name="" id="" cols="48" rows="10" placeholder="Enter your message" required></textarea>
+                    
+                      ,<input type="submit" name="submit" class="send">  
+                    </form>
+                </div>
+
+                <!-- <div class="contact">
                     <div class="contact1">
                         <div class="contact1-text">
                             <div class="contact1-title">title</div>
@@ -244,13 +281,7 @@
                         </div>   
                     </div>
                     <div class="contact2">
-                        <!-- <div class="form">
-                            <div class="name">Name</div>
-                            <div class="email">Email</div>
-                            <div class="subject">Subject</div>
-                            <div class="message">Message</div>
-                        </div>
-                        <div class="submit">Submit</div> -->
+
 
                         <input type="text" placeholder="Enter your name" required>
                         <input type="email" placeholder="Enter your email" required>
@@ -259,7 +290,7 @@
 
                     </div>
                     
-                </div>
+                </div> -->
             </div>
         </section>
         
