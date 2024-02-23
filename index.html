@@ -24,7 +24,21 @@
                     <a href="#projects">Project</a>
                     <a href="#contact">Contact Me</a>
                 </div>
-                <script type=""></script>
+                <script type="text/javascript">
+                    var marker = document.querySelector('marker');
+                    var item = document.querySelector('nav2 a');
+
+                    function indicator(e) {
+                        marker.style.left = e.offsetLeft + "px";
+                        marker.style.width = e.offsetWidth + "px";
+                    }
+
+                    item.forEach(Link => {
+                        link.addEventListener('click', (e)=> {
+                            indicator(e.target);
+                        })
+                    })
+                </script>
             </div>
         </header>
 
