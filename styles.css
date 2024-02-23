@@ -67,9 +67,20 @@ p {
     
 }
 
+.nav2 #marker {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0%;
+    background: #ff3e7e;
+    bottom: 28px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
 .nav2 a {
     color: #ededed;
-    font-size: 22px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -95,206 +106,25 @@ p {
 .home1 {
     display: flex;
     width: 50%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-/*
-
-.right {
-    position: flex;
-    width: 50%;
-    height: 90vh;
-    background: #0B0640;
-    overflow: hidden;
-}
-
-.left {
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    top: 0;
-    left: 0;
-    top: 50%;
-    background: #ff3e7e;
-}
-  
-  .ellipse {
-      position: absolute;
-      z-index: 2;
-      width: 420px;
-      height: 400px;
-      top: 0;
-      left: -10px;
-      transform-style: preserve-3d;
-      animation: elastic $speed ease-in-out infinite;
-      
-      .violet {
-          position: absolute;
-          width: $e-width;
-          height: $e-height;
-          background: #0B0640;
-          backface-visibility: hidden;
-          border-radius: 50%;
-          z-index: 2;
-          transform: rotateX(0);
-      }
-      
-      .pink {
-          @extend .violet;
-          background: $green;
-          z-index: 1;
-          transform: rotateX(180deg);
-      }
-      
-  }
-  
-  @keyframes elastic {
-      0% {
-          transform: rotateX(90deg);
-      }
-      15% {
-          transform: rotateX(150deg);
-      }
-      20% {
-          transform: rotateX(50deg);
-      }
-      25% {
-          transform: rotateX(120deg);
-      }
-      30% {
-          transform: rotateX(70deg);
-      }
-      35% {
-          transform: rotateX(100deg);
-      }
-      40% {
-          transform: rotateX(83deg);
-      } 
-      45% {
-          transform: rotateX(93deg);
-      }
-      50% {
-          transform: rotateX(90deg);
-      }
-      
-      65% {
-          transform: rotateX(30deg);
-      }
-      70% {
-          transform: rotateX(130deg);
-      }
-      75% {
-          transform: rotateX(60deg);
-      }
-      80% {
-          transform: rotateX(110deg);
-      }
-      85% {
-          transform: rotateX(80deg);
-      }
-      90% {
-          transform: rotateX(97deg);
-      } 
-      95% {
-          transform: rotateX(87deg);
-      }
-      100% {
-          transform: rotateX(90deg);
-      }
-  }
-
-
-
-
-.shadow {
-	position: absolute;
-	z-index: -1;
-	bottom: -2px;
-	left: -4px;
-	right: -4px;
-	height: 2px;
-	border-radius: 50%;
-	background: rgba(0,0,0,0.2);
-	box-shadow: 0 0 0px 8px rgba(0,0,0,0.2);
-	animation: shadow 1.6s ease-in-out infinite both;
-}
-
-@keyframes down {
-	0% {
-		transform: translateY(-100px);
-	}
-	20%, 100% {
-		transform: translateY(0);
-	}
-}
-
-@keyframes up {
-	0%, 75% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-100px);
-	}
-}
-
-@keyframes squeeze {
-	0%, 4% {
-		transform: scale(1);
-	}
-	45% {
-		transform: scale(1.8, 0.4);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
-@keyframes rotate-in {
-	0% {
-		transform: rotate(-135deg);
-	}
-	20%, 100% {
-		transform: rotate(0deg);
-	}
-}
-
-@keyframes rotate-out {
-	0%, 80% {
-		transform: rotate(0);
-	}
-	100% {
-		transform: rotate(135deg);
-	}
-}
-
-@keyframes shadow {
-	0%, 100% {
-		transform: scaleX(.5);
-	}
-	45%, 50% {
-		transform: scaleX(1.8);
-	}
-}
-
-*/
-
 
 .home2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100vh;
-}
-
-.blank {
-    height: 45vh;
 }
 
 .line {
     display: flex;
     flex-direction: column;
-    height: 30vh;
     padding-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .line h3 {
@@ -319,7 +149,7 @@ p {
 }
 
 .line h2 span {
-    text-shadow: 0 0 5px rgba(196, 197, 222, 1);
+    color: #D3D9F0;
 }
 
 .line p {
@@ -332,7 +162,6 @@ p {
     align-items: right;
     justify-content: right;
     width: 100%;
-    height: 7vh;
     padding-right: 100px;
 }
 
@@ -363,29 +192,28 @@ p {
     justify-content: right;
     align-items: center;
     width: 100%;
-    height: 8vh;
     padding-right: 100px;
+    margin-top: 2rem;
 }
 
 .more-btn {
-    width: 150px;
+    width: 160px;
     text-align: center;
     border-radius: 20px;
     padding: 12px 28px;
     background: #ff3e7e;
     border-radius: 40px;
-    font-size: 15px;
+    font-size: 16px;
     color: #0B0640;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 550;
-    box-shadow: 0 0 5px #ff3e7e,
-    0 0 25px #ff3e7e
+    
 }
 
 .more-btn:hover {
     box-shadow: 0 0 5px #ff3e7e,
-    0 0 25px #ff3e7e, 0 0 50px #ff3e7e
+    0 0 25px #ff3e7e
 }
 
 
@@ -426,11 +254,10 @@ p {
 }
 
 .about-me2 h4 { 
-    font-size: 29px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.7em;
     color: #C4C5DE;
-    text-shadow: 0 0 5px rgba(196, 197, 222, 1);
 }
 
 .about-me2 p {
@@ -484,7 +311,7 @@ p {
     max-width: 600px;
     min-width: 350px;
     padding: 30px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
@@ -492,21 +319,26 @@ p {
             1px 1px 40px #2F04ab
 }
 
+.service:hover {
+    transform: translate(0, -5px);
+    transition-duration: 0.5s;
+}
+
 .service i {
-    font-size: 50px;
+    font-size: 52px;
     margin-bottom: 15px;
     margin-top: 1rem;
 }
 
 .service h2 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 500;
     margin-bottom: 10px;
     color: #ededed;
 }
 
 .service p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2rem;
 }
 
@@ -521,16 +353,16 @@ p {
     margin-bottom: 1rem;
     background: #ff3e7e;
     border-radius: 20px;
-    color: #0E0036;
+    color: #000;
     letter-spacing: 1px;
     font-weight: 550;
     box-shadow: 0 0 3px #ff3e7e,
-    0 0 25px #ff3e7e
+
 }
 
 .service a:hover {
     box-shadow: 0 0 5px #ff3e7e,
-    0 0 25px #ff3e7e, 0 0 40px #ff3e7e
+    0 0 25px #ff3e7e
 }
 
 .content4 {
@@ -565,289 +397,6 @@ p {
     width: 100%;
 }
 
-.skills1 {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.tech-skills {
-    width: 60%;
-}
-
-.tech-skills h2 {
-    color: #ededed;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.bar {
-    font-size: 23px;
-}
-.skills1 .bar {
-    margin-top: 40px 0;
-    margin-bottom: 5px;
-}
-.skills1 .bar:first-child {
-    margin-top: 0;
-}
-.skills1 .bar:last-child {
-    margin-bottom: 0;
-}
-.skills1 .bar .info {
-    margin-bottom: 5px;
-}
-.skills1 .bar .info span {
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-    color: #D3D9F0
-}
-.skills1 .bar .progress-line {
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #000;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-
-}
-
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
-    }
-}
-.skills1 .bar .progress-line span {
-    height: 100%;
-    background-color: #ff3e7e;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-.progress-line.html span {
-    width: 30%;   
-}
-.progress-line.css span {
-    width: 15%;   
-}
-.progress-line.javascript span {
-    width: 2%;   
-}
-.progress-line.python span {
-    width: 50%;   
-}
-.progress-line.cplusplus span {
-    width: 20%;   
-}
-.progress-line.java span {
-    width: 30%;   
-}
-.progress-line span::after {
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-.progress-line.html span::after {
-    content: "30%";
-}
-.progress-line.css span::after {
-    content: "15%";
-}
-.progress-line.javascript span::after {
-    content: "2%";
-}
-.progress-line.python span::after {
-    content: "50%";
-}
-.progress-line.cplusplus span::after {
-    content: "20%";
-}
-.progress-line.java span::after {
-    content: "30%";
-}
-.progress-line span::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-
-.skills2 {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-}
-
-.prof-skills {
-    display: flex;
-    flex-direction: column;
-}
-
-.prof-skills h2 {
-    color: #ededed;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.radialbar-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.radial-bars{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-
-.radial-bars1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.radial-bars2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.radial-bars .radial-bar {
-    width: 170px;
-    height: 170px;
-    position: relative;
-}
-.radial-bars .radial-bar svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    width: 120px;
-    height: 160px;
-}
-.radial-bars .radial-bar .progress-bar {
-    stroke-width: 10;
-    stroke: black;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-    animation: animate-bar 1s linear forwards;
-}
-@keyframes animate-bar {
-    100% {
-        stroke-dashoffset: -1;
-    }
-}
-.path {
-    stroke-width: 10;
-    stroke: #ff3e7e;
-    fill: transparent;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 502;
-    stroke-linecap: round;
-}
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
-.path-5{animation: animate-path5 1s 1s linear forwards;}
-.path-6{animation: animate-path6 1s 1s linear forwards;}
-
-@keyframes animate-path1 {
-    100% {
-        stroke-dashoffset: 200;;
-    }
-}
-@keyframes animate-path2 {
-    100% {
-        stroke-dashoffset: 180;;
-    }
-}
-@keyframes animate-path3 {
-    100% {
-        stroke-dashoffset: 150;;
-    }
-}
-@keyframes animate-path4 {
-    100% {
-        stroke-dashoffset: 230;;
-    }
-}
-@keyframes animate-path5 {
-    100% {
-        stroke-dashoffset: 200;;
-    }
-}
-@keyframes animate-path6 {
-    100% {
-        stroke-dashoffset: 200;;
-    }
-}
-@keyframes showText {
-    100% {
-        opacity: 1;
-    }
-}
-
-.radial-bar .percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 17px;
-    font-weight: 700;
-    color: #ff3e7e;
-    font-size: 30px;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
-.radial-bar .percentage span {
-    font-size: 15px;
-    font-weight: 600;
-    color: #D3D9F0;
-}
-
-.radial-bar .text {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    left: 30%;
-    bottom: -1px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-
 .content5 {
     width: 100%;
     margin-top: 3rem;
@@ -864,7 +413,7 @@ p {
 .project-title h3 {
     text-align: center;
     color: #ededed;
-    font-size: 50px;
+    font-size: 60px;
     margin-bottom: 5rem;
 }
 
@@ -896,7 +445,7 @@ p {
     display: flex;
     align-items: flex-end;
     transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px 2px rgba(47,4,171,0.8);
+    box-shadow: 0px 8px 20px 2px rgba(47,4,171,0.8);
 }
 
 .card > .row {
