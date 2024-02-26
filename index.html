@@ -16,42 +16,37 @@
                     <img src="resources/portfolio-logo.png" alt="Portfolio">
                 </div>
                 <div class="nav2">
-                    <div id="marker"></div>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Project</a>
                     <a href="#contact">Contact Me</a>
+                    <hr />
                 </div>
-                <script type="text/javascript">
-                    var marker = document.querySelector('marker');
-                    var item = document.querySelector('nav2 a');
-
-                    function indicator(e) {
-                        marker.style.left = e.offsetLeft + "px";
-                        marker.style.width = e.offsetWidth + "px";
-                    }
-
-                    item.forEach(Link => {
-                        link.addEventListener('click', (e)=> {
-                            indicator(e.target);
-                        })
-                    })
-                </script>
             </div>
         </header>
 
         <section>
             <div class="content1" id="home">
                 <div class="home1">
-                    
+                    <div class="box">
+                        <div class="photo-content">
+                            <img src="resources/my-photo2.jpg" alt="My Photo">
+                            <h2>Rhealyn Panganiban<br><span>UI DESIGNER</span></h2>
+                            <a href="#contact" class="ripple">Hire Me
+                                <span style="left: 79px; top: 40px;"></span>
+                                <span style="left: 108px; top: 37px;"></span>
+                                <span style="left: 122px; top: 36px;"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="home2">
                     <div class="line">
                         <h3>Hello, it's me</h3>
                         <h1>Rhealyn Panganiban</h1>
-                        <h2>I am an <span>Aspiring Full-Stack Developer</span></h2>
+                        <h2>I am an <span data-text="Aspiring Full-Stack Developer">Aspiring Full-Stack Developer</span></h2>
                         <p>seeking an opportunity in software development to apply my
                             programming skills, problem-solving abilties, and passion
                             for innovation.</p>
@@ -77,13 +72,13 @@
                     <h2>About <span>Me</span></h2>
                     <h4>Aspiring Full-Stack Developer</h4>
                     <p>I'm an aspiring full-stack developer with a passion for 
-                        crafting seamless and engaging digital experiences. In 
-                        the realm of web development, I believe that a well-designed
+                        crafting <span>seamless and engaging digital experiences</span>. 
+                        In the realm of web development, I believe that a well-designed
                         website is not merely a collection of code but a harmonious
-                         blend of creativity, and functionality. I am dedicated to 
+                         blend of <span>creativity, and functionality</span>. I am dedicated to 
                          creating dynamic and responsive websites/applications that not 
                          only meet technical standards but also captivate users with 
-                         an aesthetically pleasing design.</p>
+                         an <span>aesthetically pleasing design</span>.</p>
 
                 </div>
             </div>
@@ -123,23 +118,45 @@
                 <div class="skills-title">
                     <h1 class="title-skills">My <span>Skills</span>
                 </div>
-                <div class="skills-list">
-                    <div class="skills">
-                        <div class="lang"></div>
-                        <div class="lang-skills"></div>
+                <div class="skills">
+                    <div class="skills-card skills-1">
+                        <div class="skills-circle"></div>
+                        <div class="skills-content">
+                            <h2>html</h2>
+                            <ul>
+                                <li>Familiar with HTML syntax</li>
+                                <li>Has sufficient knowledge in box modeling</li>
+                                <li>Basic understanding of building web pages</li>
+                            </ul>
+                        </div>
+                        <img src="resources/html.png">
                     </div>
-                    <div class="skills">
-                        <div class="lang"></div>
-                        <div class="lang-skills"></div>
+                    <div class="skills-card skills-2">
+                        <div class="skills-circle"></div>
+                        <div class="skills-content">
+                            <h2>css</h2>
+                            <ul>
+                                <li>Familiar with CSS syntax</li>
+                                <li>Knowledgeable in styling elements using CSS properties</li>
+                                <li>Experience with CSS layout techniques</li>
+                            </ul>
+                        </div>
+                        <img src="resources/css.png">
                     </div>
-                    <div class="skills">
-                        <div class="lang"></div>
-                        <div class="lang-skills"></div>
+                    <div class="skills-card skills-3">
+                        <div class="skills-circle"></div>
+                        <div class="skills-content">
+                            <h2>javascript</h2>
+                            <ul>
+                                <li>Basic JavaScript syntax and concepts</li>
+                                <li>Basic events and event handling</li>
+                                <li>Exploring functions and how to define and call them</li>
+                            </ul>
+                        </div>
+                        <img src="resources/js.png">
                     </div>
-                    <div class="skills">
-                        <div class="lang"></div>
-                        <div class="lang-skills"></div>
-                    </div>                    
+                    
+
                 </div>
             </div>
         </section>
@@ -213,7 +230,7 @@
                     </div>
                     <div class="contact2">
                         <div class="contact-text">
-                            <h4>Let's Work Together</h4>
+                            <h4 data-text="Let's Work Together">Let's Work Together</h4>
                             <p>Let's turn ideas into reality. Whether it's crafting 
                                 compelling websites, solving complex problems, or creating 
                                 innovative solutions—let's collaborate and make a lasting 
@@ -235,7 +252,7 @@
         </section>
         
     </div>
-    
+    <script src="main.js"></script>
   
 </body>
 </html>
