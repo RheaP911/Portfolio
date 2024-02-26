@@ -82,6 +82,7 @@ p {
     
 }
 
+
 .nav2 a {
     color: #ededed;
     font-size: 20px;
@@ -90,10 +91,16 @@ p {
     animation-delay: calc(.2s * var(--i));
 }
 
-
-
 .nav2 a:hover {
-    color: #FF3E7E;
+    color: #ff3e7e;
+}
+
+.active, .nav-button:hover {
+    color: #ff3e7e;
+}
+
+.nav-button.active {
+    color: #ff3e7e;
 }
 
 .text {
@@ -464,56 +471,150 @@ p {
 
 .content2 {
     display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 10rem;
 }
 
-.about-me1 {
+.about-title {
     display: flex;
-    width: 50%;
+    width: 100%;
+    align-items: center;
     justify-content: center;
-    align-items: right;
+    margin-bottom: 5rem;
 }
 
-.photo {
-    width: 70%;  
+.about-title h2 {
+    font-size: 60px;
+    width: 80%;
+    color: #ededed;
+    text-align: center;
+    line-height: 1.7em;
 }
 
-.about-me2 {
+.about-title h2 span {
+    color: #ff3e7e;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content .about-me1 {
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    align-items: left;
+    align-items: flex-end;
 }
 
-.about-me2 h2 { /*Title*/
-    font-size: 60px;
-    color: #ededed;
-    text-align: left;
-    line-height: 1.7em;
-}
-
-.about-me2 h2 span {
-    color: #ff3e7e;
-}
-
-.about-me2 h4 { 
+.about-me1 h4 { 
     font-size: 32px;
     font-weight: 600;
     line-height: 1.7em;
-    color: #C4C5DE;
+    color: #0B0640;
+    position: relative;
+    -webkit-text-stroke: 0.02vw #322b95;
 }
 
-.about-me2 p {
+.about-me1 h4::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #FF3E7E;
+    white-space : nowrap;
+    -webkit-text-stroke: 0vw #0e0016;
+    border-right: 2px solid #ff3e7e;
+    overflow: hidden;
+    animation: showText 6s linear infinite;
+}
+
+
+.about-me1 p {
     margin-top: 1rem;
     width: 85%;
     font-size: 20px;
+    text-align: right;
 }
 
-.about-me2 p span {
+.about-me1 p span {
     color: #ff6094;
 
+}
+
+.icon-wrapper .icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    padding: 3px 15px;
+    margin-top: 1.5rem;
+    background: transparent;
+    border: 2px solid #ff3e7e;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ff3e7e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-wrapper .icon-btn span {
+    color: #D3D9F0;
+}
+
+.icon-wrapper .icon-btn .resume-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    
+}
+
+.icon-wrapper .icon-btn .resume-icon i {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #ff3e7e;    
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-btn span{
+    text-decoration: none;
+}
+
+.about-content .about-me2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: right;
+    padding-left: 8rem;
+}
+
+.about-content .about-me2 .photo {
+    position: relative;
+    width: 550px;
+    border: 2px solid #0B0640; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #22037d,
+            1px 1px 40px #2F04ab
+}
+
+.about-content .about-me2 .photo:hover {
+    transform: translate(0, -8px);
+    transition-duration: 0.5s;
 }
 
 .content3 {
@@ -792,7 +893,7 @@ p {
     color: white;
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgba(47,4,171,0.8);
+    background-color: rgba(0,0,150,0.8);
 }
 
 .card > .row > .icon {
@@ -823,6 +924,7 @@ p {
     color: #b0b0ba;
     line-height: 1.5em;
     color: #C4C5DE;
+    font-size: 16px;
 }
 
 .description h4 {
@@ -904,6 +1006,7 @@ input:checked + label .description {
 
 .contact-text h4 {
     width: 255px;
+    height: 30px;
     font-size: 25px;
     line-height: 1em;
     color: #0B0640;
@@ -949,22 +1052,10 @@ input:checked + label .description {
 .contact-list i {
     color: #ff3e7e;
     line-height: 2em;
-    animation: shake 1s ease-in-out infinite;
 }
 
 .contact-list i:nth-child(2) {
     animation-delay: 5s;
-}
-
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(0deg); }
-    30% { transform: rotate(0deg); }
-    45% { transform: rotate(15deg);  }
-    50% { transform: rotate(-15deg);  }
-    60% { transform: rotate(0deg);  }
-    75% {transform: rotate(0deg);  }
-    100% { transform: rotate(0deg);  }
 }
 
 .contact-list li a {
