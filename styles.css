@@ -93,7 +93,6 @@ p {
     font-size: 20px;
     text-decoration: none;
     animation: slideLeft .5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
 }
 
 .nav2 a:hover {
