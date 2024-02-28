@@ -1,7 +1,9 @@
 //Ripple Effect on Hire me Button
-const buttons = document.getElementsByClassName('ripple');
+const buttons = document.querySelector('ripple');
+console.log(typeof buttons);
 buttons.forEach(btn => {
     btn.addEventListener('click', function(e) {
+        console.log(e);
         let x = e.clientX - e.target.offsetLeft;
         let y = e.clientY - e.target.offsetTop;
 
@@ -16,19 +18,3 @@ buttons.forEach(btn => {
     })
 })
 
-
-//Navigation Hover
-document.addEventListener("DOMContentLoaded", function() {
-    const navButtons = document.querySelectorAll('.nav-button');
-
-    navButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-
-            navButtons.forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-
-            this.classList.add('active');
-        });
-    });
-});
