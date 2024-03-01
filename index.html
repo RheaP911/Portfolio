@@ -31,13 +31,9 @@
                 <div class="home1">
                     <div class="box">
                         <div class="photo-content">
-                            <img src="resources/my-photo2.jpg" alt="My Photo">
+                            <img src="resources/my-photo1.jpg" alt="My Photo">
                             <h2>Rhealyn Panganiban<br><span>UI DESIGNER</span></h2>
-                            <a href="#contact" class="ripple">Hire Me
-                                <span style="left: 79px; top: 40px;"></span>
-                                <span style="left: 108px; top: 37px;"></span>
-                                <span style="left: 122px; top: 36px;"></span>
-                            </a>
+                            <a href="#contact">Hire Me</a>
                         </div>
                     </div>
                 </div>
@@ -64,20 +60,53 @@
     
         <section>
             <div class="content2" id="about">
-                <div class="about-title">
-                    <h2>About <span>Me</span></h2>
-                </div>
                 <div class="about-content">
                     <div class="about-me1">
-                        <h4 data-text="Aspiring Full-Stack Developer">Aspiring Full-Stack Developer</h4>
+                        <img src="resources/my-photo2.jpg" class="photo">
+                    </div>
+                    <div class="about-me2">
+                        <h2>About <span>Me</span></h2>
                         <p>I'm an aspiring full-stack developer with a passion for 
-                            crafting <span>seamless and engaging digital experiences</span>. 
-                            In the realm of web development, I believe that a well-designed
-                            website is not merely a collection of code but a harmonious
-                             blend of <span>creativity, and functionality</span>. I am dedicated to 
+                            <span> seamless and engaging digital experiences</span>. I believe that a well-designed
+                            website is not merely a collection of code but a <span>harmonious
+                             blend of creativity, and functionality</span>. I am dedicated to 
                              creating dynamic and responsive websites/applications that not 
                              only meet technical standards but also captivate users with 
                              an <span>aesthetically pleasing design</span>.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            
+                        </div> 
+                        <div class="tab-contents  active-tab" id="education">
+                            <ul>
+                                <li><span>2020 - Current</span><br>BS Computer Engineering at Batangas State University</li>
+                                <li><span>2018 - 2020</span><br>STEM at Pinamukan Integrated School</li>
+                            </ul>
+                        </div> 
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024</span><br>freeCodeCamp</li>
+                                <li><span>2024</span><br>100 Days CSS</li>
+                            </ul>
+                        </div>   
+                        
+                        <script>
+                            var tablinks = document.getElementsByClassName('tab-links');
+                            var tabcontents = document.getElementsByClassName('tab-contents');
+
+                            function opentab(tabname) {
+                                for(tablink of tablinks) {
+                                    tablink.classList.remove("active-link");
+                                }
+                                for(tabcontent of tabcontents) {
+                                    tabcontent.classList.remove("active-tab");
+                                }
+                                event.currentTarget.classList.add('active-link');
+                                document.getElementById(tabname).classList.add('active-tab');
+                            }
+                        </script>  
+
                         <div class="icon-wrapper">
                             <div class="icon-btn">
                                 <div class="resume-icon">
@@ -88,9 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-me2">
-                        <img src="resources/full-stack.gif" class="photo">
-                    </div>
+                    
                 </div>
                 
             </div>
@@ -181,7 +208,7 @@
                 <div class="projects">
                     <div class="card">
                         <div class="proj-img">
-                            <img src="resources/project2.png" alt="">
+                            <img src="resources/project1.png" alt="">
                         </div>
                         <div class="overlay">
                             <div class="proj-details">
@@ -195,7 +222,7 @@
                     </div>
                     <div class="card">
                         <div class="proj-img">
-                            <img src="resources/project1.png" alt="">
+                            <img src="resources/project2.png" alt="">
                         </div>
                         <div class="overlay">
                             <div class="proj-details">
@@ -249,6 +276,5 @@
         
     </div>
     <script src="main.js"></script>
-  
 </body>
 </html>

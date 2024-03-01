@@ -1,16 +1,15 @@
-//Ripple Effect on Hire me Button
-const buttons = document.querySelector('ripple');
-btn.addEventListener('click', function(e) {
-    let x = e.clientX - e.target.offsetLeft;
-    let y = e.clientY - e.target.offsetTop;
+//About Me
+var tablinks = document.getElementsByClassName('tab-links');
+var tabcontents = document.getElementsByClassName('tab-contents');
 
-    let ripples = document.createElement('span');
-    ripples.style.left = x + 'px';
-    ripples.style.top = y + 'px';
-    this.appendChild(ripples);
-
-    setTimeout(() => {
-        ripples.remove()
-    }, 1000);
-})
+function opentab(tabname) {
+    for(tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add('active-link');
+    document.getElementById(tabname).classList.add('active-tab');
+}
 
