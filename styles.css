@@ -45,6 +45,10 @@ p {
     
 }
 
+.navbar .icon {
+    display: none;
+}
+
 /* ---------------- navigation ------------------ */
 
 .nav {
@@ -333,6 +337,22 @@ p {
     text-align: right;
     width: 75%;
     line-height: 4rem;  
+}
+
+.home2 .desktop {
+    display: block;
+}
+
+.home2 .mobile {
+    display: none;
+}
+
+.home2 .desktop-desc {
+    display: block;
+}
+
+.home2 .mobile-desc {
+    display: none;
 }
 
 .home2 .line h1:hover {
@@ -655,7 +675,7 @@ p {
     align-items: center;
     width: 130px;
     height: 40px;
-    padding: 3px 10px;
+    padding: 3px 15px;
     margin-top: 1.5rem;
     background: #ff3e7e;
     border: 2px solid #ff3e7e;
@@ -1240,6 +1260,7 @@ a {
         position: fixed;
     }
 
+
     .nav1 {
         width: 25vw;
     }
@@ -1404,5 +1425,295 @@ a {
 
     .content5 .projects .card {
         margin-bottom: 20px;
+    }
+}
+
+/* ---------------- PHONE --------------------- */
+
+@media  screen and (max-width: 425px) {
+    .nav {
+        height: 8vh;
+        padding: 30px;
+        position: fixed;
+        justify-content: space-between;
+    }
+
+    .nav1 {
+        width: 25vw;
+    }
+
+    .navbar .nav .nav1 img {
+        padding: 0;
+    }
+
+    .nav2 {
+        /* width: 75vw; */
+        display: none;
+    }
+
+    .navbar .icon {
+        display: flex;
+        color: #ededed;
+        font-size: 24px;
+    }
+
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .content1 {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        /* padding: 100px 0 0 0; */
+        gap: 30px;
+    }
+    
+    .home1 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .home1 .box {
+        width: 350px;
+        height: 350px;
+        /* margin-top: 60px; */
+    }
+
+    .home2 {
+        justify-content: flex-start;
+        width: 100%;
+        height: 40vh;
+        padding: 0;
+    }
+
+    .home2 .line {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .home2 .line h3,
+    .home2 .line  h1,
+    .home2 .line  h2,
+    .home2 .line p {
+        text-align: center;
+        padding: 0;
+    }
+
+    .home2 .line h3 {
+        display: none;
+    }
+
+
+    .home2 .desktop {
+        display: none;
+    }
+
+    .home2 .mobile {
+        display: inline-block;
+        text-align: center;
+        font-size: 32px;
+        margin-top: -3rem;
+    }
+
+    .home2 .mobile span {
+        color: #D3D9F0;
+    }
+
+    .home2 .desktop-desc {
+        display: none;
+    }
+
+    .home2 .mobile-desc {
+        display: block;
+    }
+
+    .home2 .line  h2 {
+        display: none;
+    }
+
+    .home2 .line p {
+        margin-top: 1.5rem;
+        font-size: 20px;
+    }
+
+    .home2 .socials,
+    .home2 .button {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home2 .button {
+        margin-top: 20px;
+    }
+
+    .home2 .socials {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .home2 .socials a {
+        font-size: 16px;
+        width: 28px;
+        height: 28px;
+        margin: 0;
+    }
+
+    .home2 .button a {
+        margin-top: 30px;
+        padding: 5px 24px;
+        font-size: 16px;
+    }
+
+    .content2 {
+        width: 100vw;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content2 .about-content .about-me1 {
+        display: none;
+    }
+
+    .content2 .about-content .about-me2 {
+        padding: 150px 30px 0 30px;
+        margin: 0;
+        width: 100vw;
+        /* height: 100%; */
+    }
+
+    .content2 .about-me2 h2 {
+        font-size: 48px;
+    }
+
+    .content2 .about-me2 p {
+        font-size: 14px;
+    }
+
+    .tab-titles {
+        margin-top: 1rem;
+    }
+
+    .content2 .about-me2 .tab-contents li {
+        font-size: 14px;
+    }
+
+    /* .icon-wrapper .icon-btn .resume-icon {
+        padding: 2px 10px;
+    } */
+
+    .icon-wrapper .icon-btn span {
+        font-size: 14px;
+    }
+
+    .icon-wrapper .icon-btn {
+        width: 120px;
+        height: 35px;
+    }
+
+    .content3 {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /* padding: 0; */
+        padding: 0 50px;
+        gap: 30px;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .content3 .title-services {
+        height: auto;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+
+    .content3 h1.services-title {
+        margin: 0;
+        font-size: 48px;
+    }
+
+    .content3 .services {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .content3 .services .service {
+        margin-bottom: -30px;
+        width: 200px;
+        height: 320px;
+        transform: scale(0.9,0.9);
+    }
+
+    .content3 .services .service i {
+        font-size: 44px;
+    }
+
+    .content3 .services .service h2 {
+        font-size: 28px;
+    }
+
+    .content3 .services .service p {
+        font-size: 14px;
+    }
+
+    .content3 .services .service a {
+        width: 130px;
+        height: 40px;
+        padding: 10px 25px;
+        margin-bottom: 20px;
+    }
+
+    .content4 .skills {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        place-items: center;
+    }
+
+    .content4 h1 {
+        font-size: 48px;
+    }
+
+    .content4 .skills .skills-card {
+        margin-bottom: 50px;
+        transform: scale(0.8,0.8);
+        margin-bottom: 15px;
+    }
+
+    .content5 .project-title h3 {
+        margin-bottom: -30px;
+        padding: 0
+    }
+
+    .content5 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .content5 .project-title h3 {
+        font-size: 42px;
+    }
+
+    .content5 .projects {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .content5 .projects .card {
+        margin-bottom: -90px;
+        transform: scale(0.7,0.7);
     }
 }
