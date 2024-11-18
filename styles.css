@@ -11,11 +11,11 @@
 
 body {
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow-x: hidden;
 }
 
 h1 {
@@ -38,8 +38,7 @@ p {
 
 
 .container {
-    width: 100%;
-
+    width: 100vw;
     background-color: #0B0640;
     position: relative;
     z-index: 0;
@@ -50,9 +49,9 @@ p {
 
 .nav {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     position: fixed;
-    width: 100%;
+    width: 100vw;
     padding-left: 100px;
     padding-right: 100px;
     height: 10vh;
@@ -348,7 +347,7 @@ p {
     left: 0;
     width: 0%;
     height: 100%;
-    color: #FF3E7E;
+    color: #FF7BA9;
     white-space : nowrap;
     -webkit-text-stroke: 0vw #0e0016;
     border-right: 2px solid #ff3e7e;
@@ -1221,4 +1220,90 @@ a {
     background: #ff3e7e;
     color: #0B0640;
     transition: 0.5s;
+}
+
+/* --------------- TABLET ---------------------- */
+
+@media  screen and (max-width: 768px) {
+    .nav {
+        height: 8vh;
+        padding: 50px;
+        position: fixed;
+    }
+
+    .nav1 {
+        width: 25vw;
+    }
+
+    .nav2 {
+        width: 75vw;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .content1 {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 100px 0 0 0;
+    }
+    
+    .home1 {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .home2 {
+        width: 100%;
+        height: 40vh;
+        padding: 50px 0 0 0;
+    }
+
+    .home2 .line {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home2 .line h3,
+    .home2 .line  h1,
+    .home2 .line  h2,
+    .home2 .line p {
+        text-align: center;
+        padding: 0;
+    }
+
+    .home2 .line  h2 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .home2 .line p {
+        font-size: 20px;
+    }
+
+    .home2 .socials,
+    .home2 .button {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .home2 .button {
+        margin-top: 20px;
+    }
+
+    .home2 .socials {
+        gap: 10px;
+    }
+
+    .home2 .socials a {
+        margin: 0;
+    }
+
+    .home2 .button a {
+        padding: 9px 24px;
+    }
 }
