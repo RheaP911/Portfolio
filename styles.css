@@ -1466,7 +1466,7 @@ a {
         width: 100%;
         height: 100vh;
         flex-direction: column;
-        /* padding: 100px 0 0 0; */
+        padding: 50px 0 0 0;
         gap: 30px;
     }
     
@@ -1480,6 +1480,7 @@ a {
         width: 350px;
         height: 350px;
         /* margin-top: 60px; */
+        transform: scale(0.8,0.8);
     }
 
     .home2 {
@@ -1554,7 +1555,7 @@ a {
     }
 
     .home2 .socials {
-        margin-top: 30px;
+        margin-top: 10px;
         gap: 10px;
     }
 
@@ -1566,7 +1567,7 @@ a {
     }
 
     .home2 .button a {
-        margin-top: 30px;
+        margin-top: 10px;
         padding: 5px 24px;
         font-size: 16px;
     }
@@ -1583,18 +1584,20 @@ a {
     }
 
     .content2 .about-content .about-me2 {
-        padding: 150px 30px 0 30px;
+        padding: 0 30px 0 30px;
         margin: 0;
         width: 100vw;
         /* height: 100%; */
     }
 
     .content2 .about-me2 h2 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .content2 .about-me2 p {
-        font-size: 14px;
+        font-size: 12px;
+        width: 85vw;
+        margin-top: 0;
     }
 
     .tab-titles {
@@ -1602,7 +1605,7 @@ a {
     }
 
     .content2 .about-me2 .tab-contents li {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     /* .icon-wrapper .icon-btn .resume-icon {
@@ -1610,7 +1613,7 @@ a {
     } */
 
     .icon-wrapper .icon-btn span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .icon-wrapper .icon-btn {
@@ -1625,27 +1628,28 @@ a {
         align-items: center;
         margin: 0;
         /* padding: 0; */
-        padding: 0 50px;
-        gap: 30px;
+        /* padding: 0 50px; */
+        /* gap: 30px; */
         width: 100vw;
         height: 100%;
     }
 
     .content3 .title-services {
-        height: auto;
+        /* height: auto; */
         margin: 0;
-        padding-bottom: 50px;
+        padding-bottom: 0;
     }
 
     .content3 h1.services-title {
         margin: 0;
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .content3 .services {
         width: 100%;
         height: 100%;
         display: grid;
+        gap: 10PX;
         place-items: center;
     }
 
@@ -1653,7 +1657,7 @@ a {
         margin-bottom: -30px;
         width: 200px;
         height: 320px;
-        transform: scale(0.9,0.9);
+        transform: scale(0.8,0.8);
     }
 
     .content3 .services .service i {
@@ -1683,12 +1687,12 @@ a {
     }
 
     .content4 h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .content4 .skills .skills-card {
         margin-bottom: 50px;
-        transform: scale(0.8,0.8);
+        transform: scale(0.75,0.75);
         margin-bottom: 15px;
     }
 
@@ -1715,7 +1719,7 @@ a {
 
     .content5 .projects .card {
         margin-bottom: -90px;
-        transform: scale(0.7,0.7);
+        transform: scale(0.65,0.65);
     }
 
     .contact {
