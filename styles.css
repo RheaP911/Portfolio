@@ -1473,6 +1473,7 @@ a {
     .home1 {
         width: 100%;
         height: 60vh;
+        transform: scale(0.8,0.8);
     }
 
     .home1 .box {
@@ -1716,4 +1717,43 @@ a {
         margin-bottom: -90px;
         transform: scale(0.7,0.7);
     }
+
+    .contact {
+        flex-direction: column;
+        padding: 0 50px;
+        margin: 0;
+    }
+
+    .contact .contact1 {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .contact .contact1 .text-contact h2,
+    .contact .contact1 .text-contact h2 span {
+        font-size: 42px;
+    }
+
+    .contact .contact2 {
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+
+    .contact .contact2 .contact-text h4 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact .contact2 .contact-text p,
+    .contact .contact2 .contact-list li {
+        font-size: 14px;
+    }
+
+    .contact .contact2 .contact-list{
+        margin-top: 20px;
+    }
+   
 }
