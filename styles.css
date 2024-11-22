@@ -361,6 +361,7 @@ p {
 
 .home2 .line h2 {
     text-align: right;
+    /* text-align: right; */
     color: #C4C5DE;
     width: 75%;
     line-height: 1.5em;
