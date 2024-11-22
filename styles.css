@@ -364,6 +364,7 @@ p {
     color: #C4C5DE;
     width: 75%;
     line-height: 1.5em;
+    margin-bottom: 0.5rem;
     animation: slideRight 1s ease forwards;
 }
 
@@ -625,7 +626,7 @@ p {
 
 .tab-links {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
     text-align: left;
