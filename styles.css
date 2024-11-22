@@ -1574,7 +1574,7 @@ a {
 
     .content2 {
         width: 100vw;
-        /* height: 100vh; */
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1600,6 +1600,12 @@ a {
         margin-top: 0;
     }
 
+    .content2 .aboutme-tab {
+        width: 100vw;
+        border-color: #FF3E7E;
+        border-radius: 25px;
+        margin-top: 1.5rem;
+    }
     .tab-titles {
         margin-top: 1rem;
     }
